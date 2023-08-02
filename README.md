@@ -8,9 +8,21 @@ The project focuses on correlating AMSR-E 36-GHz and 89-GHz brightness temperatu
 * Correlate AMSR-E 89-GHz brightness temperature with CloudSat radar echo top height for tropical cyclones.
 * Investigate other AMSR-E channels (e.g., 37 GHz sensitive to liquid particles) and their relationship with CloudSat data for additional information on hurricane structures.
 * Utilize statistical analysis, such as multiple linear regression and decision tree based regression, to quantify the relationships and extend the reach of CloudSat radar beyond its narrow swath.
+
+| ![CloudSat Reflectivity Profile](https://github.com/yuliyaselevich/decision_tree_based_regression/blob/main/images/cloudsat_reflectivity.png) |
+|:--:| 
+| *CloudSat Reflectivity Profile* |
+
+| ![CloudSat and AMSR-E swaths overlap](https://github.com/yuliyaselevich/decision_tree_based_regression/blob/main/images/cloudsat_amsre_overlap.png) |
+|:--:| 
+| *CloudSat and AMSR-E swaths overlap* |
 ## Findings
 1. The combination of AMSR-E brightness temperatures and CloudSat radar echo top height provides a viable tool for extrapolating CloudSat information beyond its narrow swath.
 2. Multiple regression of 89 GHz & 37 GHz channels shows promising results, indicating the potential to include more channels at lower frequencies.
+
+| ![Correlation Matrix](https://github.com/yuliyaselevich/decision_tree_based_regression/blob/main/images/corr_matrix.png) |
+|:--:| 
+| *Correlation Matrix* |
 ## Model Evaluation
 The model that showed the best results for hurricane characterization was the XGBoost regressor. The model was evaluated with the following performance metrics:
 * Root Mean Squared Error (RMSE): 1158.62
