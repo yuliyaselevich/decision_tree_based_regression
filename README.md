@@ -17,7 +17,9 @@ The model that showed the best results for hurricane characterization was the XG
 * Mean Absolute Error (MAE): 738.45
 * R-squared (R2): 0.8989
 These evaluation metrics indicate that the XGBoost regressor provided a highly accurate and robust prediction of Echo Top Height using the combined CloudSat and AMSR-E data.
+
 ![Alt XGB Regressor Performance](https://github.com/yuliyaselevich/decision_tree_based_regression/blob/main/images/xgb.png)
+| *XGB Regressor Performance* |
 ### Methods Used
 * Descriptive and inferential statistics
 * EDA
